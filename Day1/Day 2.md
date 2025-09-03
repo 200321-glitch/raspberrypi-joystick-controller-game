@@ -7,13 +7,13 @@ Day 2: Switching to PCF8591 & Joystick Data Capture
 - Capture clean X/Y values for both joysticks.
 
 ## Key Change
-We discovered that the **MCP3008 was not required** for our project.  
+We discovered that the **MCP3008 was not required** for our project. At one point, the joystick showed a constant value (1023).
 Instead, the **PCF8591 (I²C Analog-to-Digital Converter)** provided a much simpler solution:  
 - Fewer wires (just SDA + SCL for data).  
 - Direct analog → digital conversion.  
 - Stable, consistent joystick readings.  
 
-By **removing the MCP3008** and wiring the joysticks through the **PCF8591**, our Raspberry Pi was finally able to read joystick input successfully.
+By **removing the MCP3008** and wiring the joysticks through the **PCF8591**, our Raspberry Pi was finally able to read joystick input successfully. 
 
 ## Wiring
 
@@ -47,7 +47,5 @@ Before
 
 
 
-## Issues Encountered
-At one point, the joystick showed a constant value (1023). We realized we had plugged the flex ribbon upside down. GPIO pin mapping confusion due to non-standard pin labeling on the GPIO Extension Board.
 
 
