@@ -14,7 +14,7 @@
 Joystick is now lit and working — we confirmed power delivery and accurate readings!
 
 ## Image refernces
-![WhatsApp Image 2025-09-03 at 15 21 19_ce783ab2](https://github.com/user-attachments/assets/09981495-1186-4700-bdc5-30dd03b6ff3c)
+![WhatsApp Image 2025-09-03 at 15 20 54_8828f957](https://github.com/user-attachments/assets/0eaeebea-cc83-4a13-affa-49d483baa4b7)
 
 
 
