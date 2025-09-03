@@ -18,6 +18,7 @@ Our team started the project by discussing potential game ideas that could be im
 - Incorrect wiring attempts caused no signal detection.
 
 ## Image References
+![WhatsApp Image 2025-09-03 at 15 21 19_ce783ab2](https://github.com/user-attachments/assets/f6407dc2-a815-41ee-b816-b900d116f8d2)
 
 
 Learning: MCP3008 is essential for reading analog signals since Raspberry Pi lacks analog input capabilities.
