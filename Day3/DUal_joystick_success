@@ -46,4 +46,5 @@ Name input and scoreboard reflected custom player names.
 
 Conclusion
 
-We achieved a stable two-player Ursina game on Raspberry Pi with two analog joysticks read through a single PCF8591. We did not use the MCP3008/MCP board; the PCF8591-only approach succeeded and meets the project goals. Apples remain red cubes (no apple.png) in the final version.
+We achieved a stable two-player Ursina game on Raspberry Pi with two analog joysticks read through a single PCF8591. 
+We did not use the MCP3008/MCP board; the PCF8591-only approach succeeded and meets the project goals. Apples remain red cubes (no apple.png) in the final version.
