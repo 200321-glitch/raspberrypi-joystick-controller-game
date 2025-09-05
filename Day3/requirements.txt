@@ -1,3 +1,5 @@
+#packages required to install before running the game
+
 How to Run
 
 Activate your venv:
