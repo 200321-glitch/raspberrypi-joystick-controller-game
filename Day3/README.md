@@ -4,7 +4,6 @@ Reading two analog joysticks via a single PCF8591 ADC (I²C).
 Clean input handling inside a Python virtual environment.
 A minimal, fun gameplay loop with a scoreboard and restart flow
 
-
 Hardware
 
 Raspberry Pi (Python 3)
@@ -21,9 +20,4 @@ smbus2 for I²C within the venv
 I²C enabled via raspi-config; device detected at 0x48
 We fixed environment errors by using a venv and installing smbus2 (instead of system smbus).
 
-
-Pi ↔ PCF8591: SDA→SDA1, SCL→SCL1, 3V3→VCC, GND→GND
-Joystick 1: X→AIN0, Y→AIN1, VCC→3V3, GND→GND
-Joystick 2: X→AIN2, Y→AIN3, VCC→3V3, GND→GND
-Joystick SW buttons not used.
 We did not use the MCP3008 (MCP board). Instead, we successfully read both joysticks using a single PCF8591 over I²C.
