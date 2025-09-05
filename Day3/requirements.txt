@@ -1,1 +1,22 @@
+How to Run
 
+Activate your venv:
+
+source ~/pyenvs/games/bin/activate
+
+
+Ensure dependencies are installed:
+
+pip install ursina smbus2
+
+
+Enable & verify I²C (one-time system setup):
+
+sudo raspi-config  # enable I2C
+sudo apt install -y i2c-tools
+i2cdetect -y 1     # should show 0x48
+
+
+Run the game:
+
+python3 cube_game_dual_pcf8591_names.py
