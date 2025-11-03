@@ -1,0 +1,50 @@
+Features
+
+Two players with two physical joysticks via one PCF8591 (AIN0/1 = Player 1, AIN2/3 = Player 2)
+Name input screen before the match (“Player 1/2” defaults)
+60-second timer, random apple spawns, live scores
+Game over on time-up or player–player collision; press R to restart
+Works inside a Python virtual environment (avoids PEP 668 issues)
+
+Hardware
+
+Raspberry Pi (Bookworm / Python 3)
+PCF8591 ADC module (I²C, 8-bit)
+Two analog joysticks (X/Y axes; joystick “SW” buttons not used)
+Jumper wires / breadboard
+Wiring (single PCF8591 → two joysticks)
+Pi ↔ PCF8591 (I²C)
+Pi 3V3 → PCF8591 VCC
+Pi GND → PCF8591 GND
+Pi SDA1 → PCF8591 SDA
+Pi SCL1 → PCF8591 SCL
+
+Joystick 1
+
+X → AIN0
+Y → AIN1
+→ 3V3
+− → GND
+
+Joystick 2
+
+X → AIN2
+Y → AIN3
+→ 3V3
+− → GND
+
+Power joysticks at 3.3V (not 5V).
+
+MCP3008 (SPI) board: not required.
+We successfully read both joysticks from a single PCF8591 over I²C.
+
+Results
+
+Both joysticks controlled their players smoothly via one PCF8591.
+Timer, scoring, respawns, and restart behaved as designed.
+Name input and scoreboard reflected custom player names.
+
+Conclusion
+
+We achieved a stable two-player Ursina game on Raspberry Pi with two analog joysticks read through a single PCF8591. 
+We did not use the MCP3008/MCP board; the PCF8591-only approach succeeded and meets the project goals. Apples remain red cubes (no apple.png) in the final version.
